@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-neutral-500">
+  <nav class="bg-white border-neutral-500 dark:bg-neutral-500">
+    <div class="flex flex-wrap justify-end items-center mx-auto max-w-screen-xl">
+      <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 p-4"><i class="fa-regular fa-user fa-xl"
+          style="color: #ffffff;"></i></a>
+      <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline p-4"><i
+          class="fa-solid fa-question fa-xl" style="color: #ffffff;"></i></a>
+      <a href="https://easports.com" class="flex items-center space-x-3 rtl:space-x-reverse p-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+          class="h-10 rounded-4xl" alt="ea sports Logo" />
+      </a>
+    </div>
+  </nav>
+  <nav class="bg-white border-zinc-950 dark:bg-zinc-950 dark:border-zinc-950 sticky top-0 z-1">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://wallpapercave.com/wp/wp1019703.jpg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SPORTS</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-zinc-950 font-semibold">
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 text-zinc-950 rounded-sm hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-zinc-950 dark:hover:bg-zinc-950 md:dark:hover:bg-transparent">GAMES
+              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-zinc-100 rounded-lg shadow-sm w-44 dark:bg-zinc-700 dark:divide-zinc-600">
+              <ul class="py-2 text-sm text-zinc-950 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                  out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">NEWS</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">APPAREL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="w-full overflow-hidden bg-[url(https://4.imimg.com/data4/UJ/CM/MY-5749883/gold-goil.jpg)]">
+    <div class="marquee py-6">
+      <div class="marquee-content text-black font-bold text-3xl uppercase px-10">
+        Congrats on your Heisman win, Travis!
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/EA_Sports_College_Football_25_logo.png"
+          class="h-8 mx-4" alt="EA Sports Logo">
+        College Football 25
+
+        Congrats on your Heisman win, Travis!
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/EA_Sports_College_Football_25_logo.png"
+          class="h-8 mx-4" alt="EA Sports Logo">
+        College Football 25
+
+        Congrats on your Heisman win, Travis!
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/EA_Sports_College_Football_25_logo.png"
+          class="h-8 mx-4" alt="EA Sports Logo">
+        College Football 25
+      </div>
+    </div>
+  </div>
+  <section class="mb-[66px]">
+    <div class="flex justify-between">
+      <div class="mt-[100px] mx-4">
+        <h1 class="text-7xl font-bold">TRAVIS HUNTER IS THE CHEAT CODE</h1>
+        <p class="text-justify font-semibold">We've never seen a player like Travis Hunter before. He's unfair, unreal
+          and unstoppable. We're celebrating his record-breaking season with a limited-edition tee — and some historic
+          updates to EA SPORTS College Football 25.</p>
+        <div class="flex justify-around">
+          <button
+            class="my-4 px-6 py-3 text-white font-bold border-2 border-white rounded-full hover:scale-110 transition duration-300">
+            BUY APPAREL
+          </button>
+          <button
+            class="my-4 px-6 py-3 text-white font-bold border-2 border-white rounded-full hover:scale-110 transition duration-300">
+            PLAY NOW
+          </button>
+          <button
+            class="my-4 px-6 py-3 text-white font-bold border-2 border-white rounded-full hover:scale-110 transition duration-300">
+            DOWNLOAD WALLPAPER
+          </button>
+        </div>
+      </div>
+      <img src="https://media.contentapi.ea.com/content/dam/ea/sports/common/travishunter-dotcom.png.adapt.320w.png"
+        alt="" width="800px" height="800px">
+    </div>
+  </section>
+  <section>
+    <div class="relative w-full h-screen overflow-hidden">
+      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
+        <source src="sports.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 flex items-center justify-center text-4xl font-bold">
+        <h1 class="text-9xl font-[1000]">ITS IN <br>
+          <div class="flex justify">
+            <h2 class="mt-4">THE</h2> <img
+              src="https://brandlogos.net/wp-content/uploads/2023/11/ea_sports-logo_brandlogos.net_buhjx-512x513.png"
+              alt="" width="200px" height="200px">
+          </div> GAME
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class="mt-[100px]">
+    <h2 class="text-center text-5xl font-bold text-stone-100">LATEST SPORTS GAMES</h2>
+    <div class="bg-netural-500 py-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="NHL 25" class="w-full">
+          <div class="absolute bottom-4 left-[6rem] flex items-center space-x-3 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+              class="h-10 rounded-4xl " alt="ea sports Logo" />
+            <h1 class="font-[1000] text-4xl text-stone-100">NHL25</h1>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="FC 25" class="w-full">
+          <div>
+            <div class="absolute bottom-4 left-[7rem] flex items-center space-x-3 p-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+                class="h-10 rounded-4xl " alt="ea sports Logo" />
+              <h1 class="font-[1000] text-4xl text-stone-100">FC25</h1>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="Madden 25" class="w-full">
+          <div class="absolute bottom-4 left-[4rem] flex items-center space-x-3 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+              class="h-10 rounded-4xl " alt="ea sports Logo" />
+            <h1 class="font-[1000] text-4xl text-stone-100">MADDEN25</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-netural-500 py-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="NHL 25" class="w-full">
+          <div class="absolute bottom-4 left-[6rem] flex items-center space-x-3 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+              class="h-10 rounded-4xl " alt="ea sports Logo" />
+            <h1 class="font-[1000] text-4xl text-stone-100">NHL25</h1>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="FC 25" class="w-full">
+          <div>
+            <div class="absolute bottom-4 left-[7rem] flex items-center space-x-3 p-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+                class="h-10 rounded-4xl " alt="ea sports Logo" />
+              <h1 class="font-[1000] text-4xl text-stone-100">FC25</h1>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="Madden 25" class="w-full">
+          <div class="absolute bottom-4 left-[4rem] flex items-center space-x-3 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+              class="h-10 rounded-4xl " alt="ea sports Logo" />
+            <h1 class="font-[1000] text-4xl text-stone-100">MADDEN25</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-netural-500 py-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="NHL 25" class="w-full">
+          <div class="absolute bottom-4 left-[6rem] flex items-center space-x-3 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+              class="h-10 rounded-4xl" alt="ea sports Logo" />
+            <h1 class="font-[1000] text-4xl text-stone-100">NHL25</h1>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="FC 25" class="w-full">
+          <div>
+            <div class="absolute bottom-4 left-[7rem] flex items-center space-x-3 p-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+                class="h-10 rounded-4xl " alt="ea sports Logo" />
+              <h1 class="font-[1000] text-4xl text-stone-100">FC25</h1>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://img.utdstc.com/icon/46c/906/46c90668108adc9a15619ac8f89221ca66aa51ca5bd8aca307ef19456e334d8e:200"
+            alt="Madden 25" class="w-full">
+          <div class="absolute bottom-4 left-[4rem] flex items-center space-x-3 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS375Wr68Celhaf9c5JzBx28pmwST3qCHicvA&s"
+              class="h-10 rounded-4xl " alt="ea sports Logo" />
+            <h1 class="font-[1000] text-4xl text-stone-100">MADDEN25</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center"> <button
+        class="my-[80px] px-6 py-3 text-white font-bold bg-rose-500 rounded-full hover:scale-110 transition duration-300">SEE
+        ALL
+        GAMES</button>
+    </div>
+  </section>
+  <section class="bg-white pt-[10rem]">
+    <h2 class="text-center text-5xl font-bold text-black pb-[5rem]">LATEST NEWS</h2>
+    <div class="bg-netural-500 py-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+          <!-- Image Section -->
+          <img src="your-image.jpg" alt="EA Sports" class="w-full">
+
+          <!-- Content Section -->
+          <div class="bg-blue-600 p-6">
+            <h2 class="text-white text-2xl font-extrabold leading-tight uppercase">
+              Electronic Arts Agrees to Acquire Tracab Technologies
+            </h2>
+            <p class="text-white mt-3 text-sm">
+              EA SPORTS acquires TRACAB Technologies to enhance sports simulation experiences,
+              delivering unparalleled realism to sports fans worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+          <!-- Image Section -->
+          <img src="your-image.jpg" alt="EA Sports" class="w-full">
+
+          <!-- Content Section -->
+          <div class="bg-blue-600 p-6">
+            <h2 class="text-white text-2xl font-extrabold leading-tight uppercase">
+              Electronic Arts Agrees to Acquire Tracab Technologies
+            </h2>
+            <p class="text-white mt-3 text-sm">
+              EA SPORTS acquires TRACAB Technologies to enhance sports simulation experiences,
+              delivering unparalleled realism to sports fans worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+          <!-- Image Section -->
+          <img src="your-image.jpg" alt="EA Sports" class="w-full">
+
+          <!-- Content Section -->
+          <div class="bg-blue-600 p-6">
+            <h2 class="text-white text-2xl font-extrabold leading-tight uppercase">
+              Electronic Arts Agrees to Acquire Tracab Technologies
+            </h2>
+            <p class="text-white mt-3 text-sm">
+              EA SPORTS acquires TRACAB Technologies to enhance sports simulation experiences,
+              delivering unparalleled realism to sports fans worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-netural-500 py-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+          <!-- Image Section -->
+          <img src="your-image.jpg" alt="EA Sports" class="w-full">
+
+          <!-- Content Section -->
+          <div class="bg-blue-600 p-6">
+            <h2 class="text-white text-2xl font-extrabold leading-tight uppercase">
+              Electronic Arts Agrees to Acquire Tracab Technologies
+            </h2>
+            <p class="text-white mt-3 text-sm">
+              EA SPORTS acquires TRACAB Technologies to enhance sports simulation experiences,
+              delivering unparalleled realism to sports fans worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+          <!-- Image Section -->
+          <img src="your-image.jpg" alt="EA Sports" class="w-full">
+
+          <!-- Content Section -->
+          <div class="bg-blue-600 p-6">
+            <h2 class="text-white text-2xl font-extrabold leading-tight uppercase">
+              Electronic Arts Agrees to Acquire Tracab Technologies
+            </h2>
+            <p class="text-white mt-3 text-sm">
+              EA SPORTS acquires TRACAB Technologies to enhance sports simulation experiences,
+              delivering unparalleled realism to sports fans worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://i.ytimg.com/vi/wO_VnBQjHQw/sddefault.jpg" alt="EA Sports" class="w-full">
+          <div class="bg-blue-600 p-6">
+            <h2 class="text-white text-2xl font-extrabold leading-tight uppercase">
+              Electronic Arts Agrees to Acquire Tracab Technologies
+            </h2>
+            <p class="text-white mt-3 text-sm">
+              EA SPORTS acquires TRACAB Technologies to enhance sports simulation experiences,
+              delivering unparalleled realism to sports fans worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center"> <button
+          class="my-[100px] px-6 py-3 text-white font-bold bg-rose-500 rounded-full hover:scale-110 transition duration-300">SEE
+          ALL NEWS</button>
+      </div>
+  </section>
+  <section>
+    <div class="flex justify-around text-stone-100 bg-blue-600">
+      <h1 class="text-6xl font-[1000] my-[4rem]">TOGETHER, WE WILL <br> CHANGE THE GAME</h1>
+      <a href=""><button
+        class="my-[100px] px-6 py-4 text-white font-bold bg-rose-500 rounded-full hover:scale-110 transition duration-300">JOIN THE TELEGRAM</button></a>
+    </div>
+  </section>
+  <footer class="p-6 md:p-10 bg-black text-white">
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Top Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
+            <!-- Links -->
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:underline">Careers</a>
+                <a href="#" class="hover:underline">Executives</a>
+                <a href="#" class="hover:underline">Impact Report</a>
+                <a href="#" class="hover:underline">Our Commitments</a>
+                <a href="#" class="hover:underline">Partner With Us</a>
+            </div>
+
+            <div class="">
+                <span class="text-gray-400 uppercase text-xs">Join The Conversation</span>
+                <a href="#" class="hover:text-gray-300"></a>
+                <a href="#" class="hover:text-gray-300">❌</a>
+                <a href="#" class="hover:text-gray-300">📸</a>
+                <a href="#" class="hover:text-gray-300">🔗</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center mt-6">
+  
+            <img src="" alt="EA Sports" class="h-8 md:h-10">
+
+
+            <p class="text-xs text-gray-400 mt-4 md:mt-0">
+                *Conditions & restrictions apply. See 
+                <a href="http://www.ea.com/games/nhl/nhl-25/disclaimers" class="text-blue-400 hover:underline">
+                    http://www.ea.com/games/nhl/nhl-25/disclaimers
+                </a> for details.
+            </p>
+            <img src="" alt="ESRB Rating" class="h-12 md:h-14 mt-4 md:mt-0">
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>
